@@ -1,15 +1,26 @@
-var weight=[34,54,67,67]
-var sum=weight[0]+weight[1]+weight[2]+weight[3]
-var average=sum/4
-console.log (average)
-function setup() 
-{
+
+function setup() {
   createCanvas(400,400);
 }
 
 function draw() 
 {
-background(51);
+  ///background(30);
+  if(keyIsDown(DOWN_ARROW)){
+    background('green')
+  }
+  if(keyIsDown(UP_ARROW)){
+    background('blue')
+  }
+  if(keyIsDown(LEFT_ARROW)){
+    background('red')
+  }
+  if(keyIsDown(RIGHT_ARROW)){
+    background('purple')
+  }
 
 }
+
+
+
 
